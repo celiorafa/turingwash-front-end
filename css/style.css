@@ -10,10 +10,20 @@ body {
 .cabecalho__botao_sair{
   background-color: #8FF2FF;
   border: none 5px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
   
 }
 
-.cabecalho__opcoes{
+a {
+  color: inherit;
   text-decoration: none;
+  font-weight: 700;
+  
+}
 
+.titulo-conteudo__pagina{
+  font-size: 17px;
+  text-align: center;
 }
