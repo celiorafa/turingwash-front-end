@@ -9,6 +9,11 @@ body {
 
 .cabecalho__botao_sair{
   background-color: #8FF2FF;
-  border: none;
-  border-radius: 5px;
+  border: none 5px;
+  
+}
+
+.cabecalho__opcoes{
+  text-decoration: none;
+
 }
