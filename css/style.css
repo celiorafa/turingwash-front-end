@@ -1,0 +1,14 @@
+.cabecalho__menu_background{
+  background-color: #BCF7FF; 
+}
+
+body {
+  background-color: #EAF7FF;
+  font-family: 'Inter', sans-serif;
+}
+
+.cabecalho__botao_sair{
+  background-color: #8FF2FF;
+  border: none;
+  border-radius: 5px;
+}
