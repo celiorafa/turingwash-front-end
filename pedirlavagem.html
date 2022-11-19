@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300; 700&display=swap" rel="stylesheet">
 
   </head>
 
@@ -29,66 +29,66 @@
     </div>
 
     <!--Opções da página-->
-    <main>
+    <main class="opcoes-filtro">
       <span>Lavar</span>
-      <select>
+      <select class="opcoes-filtro__selecionar">
         <option value="carro1">Nissan Kicks</option>
         <option value="carro2">Chevrolet Onix</option>
       </select>
 
-      <span>Ordenar por:</span>
-      <select>
-        <option value="prox-desc">Proximidade</option>
-        <option value="price-desc">Menor preço</option>
+      <span>Ordenar por</span>
+      <select class="opcoes-filtro__selecionar">
+        <option value="prox-desc">proximidade</option>
+        <option value="price-desc">menor preço</option>
       </select>
     </main>
 
     <!--Blocos dos lavadores-->
-    <ul>
-    <li>
-      <img src="./img/profile.png" alt="Avatar do Lavador">
-      <span>João Pereira</span>
-      <span>Nota 4.5 (998 avaliações)</span>
-      <span>R$ 80</span>
-      <a href="inserir">Ver avaliações</a>
-      <button>Lavar meu carro</button>
+    <ul class="lavadores">
+    <li class="lavadores__card">
+      <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
+      <span class="lavadores__card_nome">João Pereira</span>
+      <span class="lavadores__card_nota">Nota 4.5 (998 avaliações)</span>
+      <span class="lavadores__card_valor" >R$ 80</span>
+      <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
+      <button class="lavadores__card_botao">Lavar meu carro</button>
     </li>
 
-    <li>
-      <img src="./img/profile.png" alt="Avatar do Lavador">
-      <span>Joana Santos</span>
-      <span>Nota 4.7 (489 avaliações)</span>
-      <span>R$ 75</span>
-      <a href="inserir">Ver avaliações</a>
-      <button>Lavar meu carro</button>
+    <li class="lavadores__card">
+      <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
+      <span class="lavadores__card_nome" >Joana Santos</span>
+      <span class="lavadores__card_nota">Nota 4.7 (489 avaliações)</span>
+      <span class="lavadores__card_valor">R$ 75</span>
+      <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
+      <button class="lavadores__card_botao">Lavar meu carro</button>
     </li>
 
-    <li>
-      <img src="./img/profile.png" alt="Avatar do Lavador">
-      <span>Matheus Oliveira</span>
-      <span>Nota 4.3 (783 avaliações)</span>
-      <span>R$ 90</span>
-      <a href="inserir">Ver avaliações</a>
-      <button>Lavar meu carro</button>
+    <li class="lavadores__card">
+      <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
+      <span class="lavadores__card_nome">Matheus Oliveira</span>
+      <span class="lavadores__card_nota">Nota 4.3 (783 avaliações)</span>
+      <span class="lavadores__card_valor">R$ 90</span>
+      <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
+      <button class="lavadores__card_botao">Lavar meu carro</button>
     </li>
 
-    <li>
-      <img src="./img/profile.png" alt="Avatar do Lavador">
-      <span>Pedro Sampaio</span>
-      <span>Nota 4.1 (801 avaliações)</span>
-      <span>R$ 60</span>
-      <a href="inserir">Ver avaliações</a>
-      <button>Lavar meu carro</button>
+    <li class="lavadores__card">
+      <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
+      <span class="lavadores__card_nome">Pedro Sampaio</span>
+      <span class="lavadores__card_nota">Nota 4.1 (801 avaliações)</span>
+      <span class="lavadores__card_valor">R$ 60</span>
+      <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
+      <button class="lavadores__card_botao">Lavar meu carro</button>
     </li>
     </ul>
     <!--Bloco do rodapé-->
-    <footer>
+    <footer class="rodape">
       <div>
-        <img src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash">
+        <img class="rodape__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash">
       </div>
 
       <div>
-        <ul>
+        <ul class="rodape__mapa">
           <li>Sobre</li>
           <li>FAQ</li>
           <li>Contato</li>
@@ -97,9 +97,9 @@
       </div>
 
       <div>
-        <img src="./img/logoinsta.png" alt="Logo instagram">
-        <span>@turingwash</span>
-        <span>2022. TuringWash. Todos os direitos reservados</span>
+        <img class="rodape__imagem_insta" src="./img/logoinsta.png" alt="Logo instagram">
+        <span class="rodape__usuario_insta">@turingwash</span>
+        <span class="rodape__direitos">2022. TuringWash. Todos os direitos reservados</span>
       </div>
     </footer>
 
