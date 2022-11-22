@@ -30,17 +30,21 @@
 
     <!--Opções da página-->
     <main class="opcoes-filtro">
-      <span>Lavar</span>
-      <select class="opcoes-filtro__selecionar">
-        <option value="carro1">Nissan Kicks</option>
-        <option value="carro2">Chevrolet Onix</option>
-      </select>
+      <div class="opcoes-filtro__carro">
+        <span>Lavar</span>
+        <select class="opcoes-filtro__selecionar">
+          <option value="carro1">Nissan Kicks</option>
+          <option value="carro2">Chevrolet Onix</option>
+        </select>
+      </div>
 
-      <span>Ordenar por</span>
-      <select class="opcoes-filtro__selecionar">
-        <option value="prox-desc">proximidade</option>
-        <option value="price-desc">menor preço</option>
-      </select>
+      <div class="opcoes-filtro__ordenar">
+        <span>Ordenar por</span>
+        <select class="opcoes-filtro__selecionar">
+          <option value="prox-desc">proximidade</option>
+          <option value="price-desc">menor preço</option>
+        </select>
+      </div>
     </main>
 
     <!--Blocos dos lavadores-->
@@ -57,7 +61,7 @@
     <li class="lavadores__card">
       <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
       <span class="lavadores__card_nome" >Joana Santos</span>
-      <span class="lavadores__card_nota">Nota 4.7 (489 avaliações)</span>
+      <span class="lavadores__card_nota"><strong> 4.7 (489 avaliações)</strong></span>
       <span class="lavadores__card_valor">R$ 75</span>
       <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
       <button class="lavadores__card_botao">Lavar meu carro</button>
@@ -96,9 +100,10 @@
         </ul>
       </div>
 
-      <div>
+      <div class="rodape__redes">
         <img class="rodape__imagem_insta" src="./img/logoinsta.png" alt="Logo instagram">
         <span class="rodape__usuario_insta">@turingwash</span>
+        <br>
         <span class="rodape__direitos">2022. TuringWash. Todos os direitos reservados</span>
       </div>
     </footer>
