@@ -190,6 +190,9 @@ right: 5px;
   font-size: 12px;
   height: 25px;
   width: 103px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   
 }
 
@@ -204,5 +207,50 @@ right: 5px;
   font-size: 12px;
   height: 25px;
   width: 103px;
+}
+.carros__card_veiculo{
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
   
 }
+.carros__card_ano{
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  
+}
+
+/*-----------ADICIONAR CARRO---------- */
+.painel{
+  background-color: #FFFFFF;
+  width: 446px ;
+  height: 181px;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.painel__fabricante, .painel__modelo, .painel__ano{
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+
+.painel__selecao, .painel__selecao_ano{
+  width: 248px ;
+  height: 19px ;
+  border-radius: 10px;
+  border-color: #A8A8A8;
+}
+
+.painel__selecao_ano{
+  width: 63px;
+  }
