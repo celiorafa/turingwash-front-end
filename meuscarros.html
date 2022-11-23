@@ -2,25 +2,30 @@
 <html lang="pt-Br">
   <head>
     <title> Meus carros</title>
+    <link rel="icon" type="imagem/png" href="./img/turingwash-icon.svg" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300; 700&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
     <!-- Cabeçalho com menu de opções-->
-    <header>
-      <nav>
-        <img src="inserir endereço imagem" alt="Logotipo do TuringWash">
-        <div>
-          <a href="./meuscarros.html">Meus Carros</a>
+    <header class="cabecalho__menu_background">
+      <img class="cabecalho__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash">
+      <nav class="cabecalho__menu-paginas">
+          <a href="./pedirlavagem.html">Pedir Lavagem</a>
           <a href="./minhaslavagens.html">Minhas Lavagens</a>
-          <button>Sair</button>
-        </div>
+          <button class="cabecalho__botao_sair">Sair</button>
       </nav>
     </header>
 
     <!--Tipo do conteúdo da página-->
-    <div>
-      <h2>Meus carros</h2>
+    <div class="titulo-conteudo">
+      <h2 class="titulo-conteudo__pagina">Meus carros</h2>
     </div>
 
        <!--Blocos dos carros-->
@@ -41,13 +46,13 @@
     <button>Adicionar carro</button>
     </main>
     <!--Bloco do rodapé-->
-    <footer>
+    <footer class="rodape">
       <div>
-        <img src="inserir endereço imagem" alt="Logotipo do TuringWash">
+        <img class="rodape__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash">
       </div>
 
       <div>
-        <ul>
+        <ul class="rodape__mapa">
           <li>Sobre</li>
           <li>FAQ</li>
           <li>Contato</li>
@@ -55,10 +60,11 @@
         </ul>
       </div>
 
-      <div>
-        <img src="inserir" alt="Logo instagram">
-        <span>@turingwash</span>
-        <span>2022. TuringWash. Todos os direitos reservados</span>
+      <div class="rodape__redes">
+        <img class="rodape__imagem_insta" src="./img/logoinsta.png" alt="Logo instagram">
+        <span class="rodape__usuario_insta">@turingwash</span>
+        <br>
+        <span class="rodape__direitos">2022. TuringWash. Todos os direitos reservados</span>
       </div>
     </footer>
 
