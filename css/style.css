@@ -3,6 +3,7 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   width: 517px;
+  height: 694px;
 
 }
 
@@ -17,7 +18,7 @@ body {
 
 .cabecalho__imagem_logo{
   position: relative;
-  right: 90px; 
+  right: 80px; 
 }
 
 .cabecalho__botao_sair{
@@ -73,13 +74,13 @@ right: 5px;
 }
 
 /* Blocos dos lavadores */
-.lavadores{
+.lavadores, .carros{
   list-style-type: none;
   margin: 16px 35px;
   padding-left: 0;
 }
 
-.lavadores__card{
+.lavadores__card, .carros__card{
   background-color: #FFFFFF;
   border-radius: 10px;
   margin-bottom: 16px;
@@ -155,6 +156,8 @@ right: 5px;
   grid-template-columns: 172px 172px 172px;
   grid-template-rows: 85px;
   align-items: center;
+  position: fixed;
+  bottom: 0px;
   
 }
 .rodape__redes{
@@ -176,4 +179,30 @@ right: 5px;
 
 .rodape__direitos{
   font-size: 4px;
+}
+
+/*---------- MEUS CARROS---------- */
+.carros__botao_excluir{
+  background-color: #FF9B9B;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  height: 25px;
+  width: 103px;
+  
+}
+
+.carros__botao{
+  text-align: center;
+}
+.carros__botao_add{
+  background-color: #8FF2FF;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  height: 25px;
+  width: 103px;
+  
 }
