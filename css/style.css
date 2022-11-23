@@ -254,3 +254,49 @@ right: 5px;
 .painel__selecao_ano{
   width: 63px;
   }
+
+/*----------- MINHAS LAVAGENS---------- */
+.lavagens{
+  background-color: #FFFFFF;
+  width: 446px ;
+  height: 80px;
+  margin: 16px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.lavagens__lavador, .lavagens__carro{
+   font-size: 12px;
+  padding-right: 46px;
+  }
+
+.lavagens__data{
+  font-size: 10px;
+  position: absolute;
+  bottom: 8px;
+  left: 335px;
+ }
+
+ .lavagens__lavador{
+  position: absolute;
+  left: 15px;
+  top: 25px;
+ }
+ .lavagens__carro{
+  position: absolute;
+  top:25px;
+  left: 132px;
+ }
+
+ .lavagens__valor{
+  background-color: #DCFCFE;
+  width: 59px;
+  height: 20px ;
+  border-radius: 0px 10px 0px 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+ }
