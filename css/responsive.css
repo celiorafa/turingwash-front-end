@@ -1,10 +1,10 @@
-@media screen and (min-width:769px) {
+@media screen and (max-width:768px) {
+  
 body {
-  background-color: #EAF7FF;
+  background-color: pink;
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
-  /* width: 517px; */
-  height: 694px;
+
 
 }
 
@@ -154,33 +154,43 @@ right: 5px;
 /* Blocos do rodapé */
 .rodape{
   background-color: #BCF7FF; 
-  display: grid;
-  grid-template-columns: 172px 172px 172px;
-  grid-template-rows: 85px;
-  align-items: center;
   position: fixed;
   bottom: 0px;
+  width: 100%;
+  text-align: center;
   
 }
 .rodape__redes{
-  justify-self: end;
+  text-align: right; 
+  padding-right: 20px;
 }
 
 .rodape__imagem_logo{
-  height: 25px;
+  height: 40px;
+
+
 }
 
 .rodape__imagem_insta{
   height: 10px;
+  text-align: right;
 }
 
-.rodape__mapa, .rodape__usuario_insta{
+.rodape__mapa {
   list-style-type: none;
-  font-size: 6px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.rodape__usuario_insta{
+  list-style-type: none;
+  font-size: 12px;
+
 }
 
 .rodape__direitos{
   font-size: 4px;
+
 }
 
 /*---------- MEUS CARROS---------- */
