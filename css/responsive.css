@@ -1,7 +1,7 @@
 @media screen and (max-width:768px) {
   
 body {
-  background-color: pink;
+  background-color: #EAF7FF;
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
 
@@ -49,21 +49,23 @@ a {
 }
 /* Tipo do conteúdo da página */
 .titulo-conteudo__pagina{
-  font-size: 19px;
+  font-size: 95%;
   text-align: center;
-  padding: 26px;
+  padding: 10px;
 }
 
 /* Opções da página */
 .opcoes-filtro{
-  font-size: 15px;
+  font-size: 10px;
   position: relative;
+  padding-left: 20px;
 }
 
 .opcoes-filtro__ordenar{
 position: absolute;
 top: 0;
 right: 5px;
+padding-right: 10px;
 
 }
 
@@ -71,14 +73,14 @@ right: 5px;
   background-color: transparent;
   border: none;
   text-decoration: underline;
-  font-size: 15px;
+  font-size: 10px;
   appearance: none;
 }
 
 /* Blocos dos lavadores */
 .lavadores, .carros{
   list-style-type: none;
-  margin: 16px 35px;
+  margin: 12px 12px;
   padding-left: 0;
 }
 
@@ -86,8 +88,7 @@ right: 5px;
   background-color: #FFFFFF;
   border-radius: 10px;
   margin-bottom: 16px;
-  height: 80px;
-  width: 446px;
+  height: 125px;
   position: relative;
   
 }
@@ -95,8 +96,8 @@ right: 5px;
 .lavadores__card_avatar{
   height: 55px;
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 35px;
+  left: 35px;
 }
 
 .lavadores__card_botao{
@@ -118,7 +119,7 @@ right: 5px;
 
   position: absolute;
   top: 10px;
-  left: 80px;
+  left: 10px;
 }
 
 .lavadores__card_nota{
@@ -126,7 +127,7 @@ right: 5px;
   font-weight: bold;
   position: absolute;
   top: 6px;
-  right: 70px;
+  right: 6px;
 }
 
 .lavadores__card_valor{
@@ -135,10 +136,10 @@ right: 5px;
   width: 59px;
   height: 27px;
   background: #DCFCFE;
-  border-radius: 0px 10px 0px 0px;
+  border-radius: 10px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 30px;
+  right: 6px;
 }
 
 .lavadores__card_ver-avali{
@@ -149,7 +150,7 @@ right: 5px;
 
   position: absolute;
   bottom: 5px;
-  right: 120px;
+  left: 10px;
 }
 /* Blocos do rodapé */
 .rodape{
@@ -189,7 +190,7 @@ right: 5px;
 }
 
 .rodape__direitos{
-  font-size: 4px;
+  font-size: 8px;
 
 }
 
