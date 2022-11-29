@@ -22,10 +22,6 @@ body {
 
 }
 
-.cabecalho__imagem_logo{
-  position: relative;
-  right: 80px; 
-}
 
 .cabecalho__botao_sair{
   background-color: #8FF2FF;
@@ -49,7 +45,11 @@ a {
   text-decoration: none;
   font-weight: 700;
   padding: 9px;
-  
+  }
+
+#menu {
+  list-style-type: none;
+  display: flex;
 }
 
 /* Tipo do conteúdo da página */

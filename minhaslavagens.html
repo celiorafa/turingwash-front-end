@@ -4,6 +4,7 @@
     <title> Minhas lavagens</title>
     <link rel="icon" type="imagem/png" href="./img/turingwash-icon.svg" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
     <meta charset="utf-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,13 +14,24 @@
   </head>
 
   <body>
-    <!-- Cabeçalho com menu de opções-->
-    <header class="cabecalho__menu_background">
+     <!-- Cabeçalho com menu de opções-->
+    
+     <header class="cabecalho__menu_background" >
       <a href="./pedirlavagem.html"><img class="cabecalho__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash"></a>
-      <nav class="cabecalho__menu-paginas">
-          <a href="./meuscarros.html">Meus Carros</a>
-          <a href="./minhaslavagens.html">Minhas lavagens</a>
-          <button class="cabecalho__botao_sair">Sair</button>
+      <nav class="cabecalho__menu-paginas" role="navigation">
+        
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="./meuscarros.html"><li>Meus Carros</li></a>
+            <a href="./minhaslavagens.html"><li>Minhas Lavagens</li></a>
+            <li><button class="cabecalho__botao_sair">Sair</button></li>
+          </ul>
+        </div>
       </nav>
     </header>
 

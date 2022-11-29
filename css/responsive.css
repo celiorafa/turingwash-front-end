@@ -389,10 +389,10 @@ padding-right: 10px;
 /*-----------ADICIONAR CARRO---------- */
 .painel{
   background-color: #FFFFFF;
-  width: 446px ;
+
   height: 181px;
   border-radius: 10px;
-  margin: 10px auto;
+  margin: 10px 10px;
   padding: 25px;
   display: flex;
   flex-direction: column;
