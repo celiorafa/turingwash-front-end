@@ -9,6 +9,10 @@ body {
 }
 
 /* Cabeçalho com menu de opções */
+
+#menuToggle input{
+  display: none;
+}
 .cabecalho__menu_background{
   background-color: #BCF7FF; 
   display: flex;
@@ -47,6 +51,7 @@ a {
   padding: 9px;
   
 }
+
 /* Tipo do conteúdo da página */
 .titulo-conteudo__pagina{
   font-size: 19px;
