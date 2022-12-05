@@ -24,5 +24,6 @@ var lavadores = [
       "valorCobrado": 75
   },
   
+  
 ]
 

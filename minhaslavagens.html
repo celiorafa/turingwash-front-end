@@ -53,21 +53,78 @@
     </div>
 
        <!--Blocos das lavagens-->
-    <main>
-        <div class="lavagens">
+    <main id="divCard">
+      
+        <script src="./js/lavagens.js"></script>
+        <script>
+            let list = document.getElementById("divCard");
+    
+            for (i=0;i<lavagens.length;i++){
+            let div = document.createElement("div");
+            let novoNome = document.createElement("span");
+            let novoCarro = document.createElement("span");
+            let novoData = document.createElement("span");
+            let novoValor = document.createElement("span");
+            let teste = document.createElement("span");
+            
+            div.innerHTML;
+            div.className="lavagens";
+    
+            
+            novoNome.innerText="Lavador \n" + lavagens[i].lavador;
+            novoNome.className="lavagens__lavador";
+            novoNome.style.fontWeight="bold"
+
+            novoCarro.innerText="Carro \n "+ lavagens[i].carro;
+            novoCarro.className="lavagens__carro";
+            novoCarro.style.fontWeight="bold";
+
+            //Escrevendo a data por extenso
+            let dataEscrita = new Date(lavagens[i].data);
+
+            const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+            let month = months[dataEscrita.getMonth()];
+            
+          novoData.innerText= dataEscrita.getDate() + " de " + month + " de " +dataEscrita.getFullYear() ;
+            novoData.className="lavagens__data";
+            //fim datas
+
+            novoValor.innerText="R$ " + lavagens[i].valorCobrado;
+            novoValor.className="lavagens__valor";
+            novoValor.style.fontWeight="bold";
+    
+            
+            list.appendChild(div);
+            div.appendChild(novoNome);
+            div.appendChild(novoCarro);
+            div.appendChild(novoData);
+            div.appendChild(novoValor);
+            
+
+            }
+    
+        </script> 
+    
+<!-- blocos utilizados para configuração sem Script - semana 2
+  <div  class="lavagens">
+      
           <div class="lavagens__lavador">
           <span>Lavador<br> <strong>Joana Santos</strong></span>
           </div>
+
           <div class="lavagens__carro">
             <span>Carro<br> <strong>Nissan Kicks (2018)</strong></span>
           </div>
+
           <div class="lavagens__data">
             <span>1 de agosto de 2022</span>
           </div>
+
           <div class="lavagens__valor">
             <span><strong>R$ 75</strong></span>
           </div>
-        </div>
+
+        </div> 
 
         <div class="lavagens">
           <div class="lavagens__lavador">
@@ -107,7 +164,7 @@
             <span><strong>R$ 75</strong></span>
           </div>
         </div>
-
+      -->
     </main>
 
    
