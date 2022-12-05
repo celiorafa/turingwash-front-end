@@ -29,10 +29,23 @@
         <ul id="menu">
           <a href="./meuscarros.html"><li>Meus Carros</li></a>
           <a href="./minhaslavagens.html"><li>Minhas Lavagens</li></a>
-          <li><button class="cabecalho__botao_sair">Sair</button></li>
+          <li><button id="loginButton" class="cabecalho__botao_sair">Offline</button></li>
         </ul>
       </div>
     </nav>
+
+    <script src="./js/usuario.js"></script> 
+      
+      <script>       
+        if (usuario.logado==true){
+          const estado = document.getElementById("loginButton");
+          estado.textContent= "Sair";
+        }
+        else{
+          const estado = document.getElementById("loginButton");
+          estado.textContent= "Entrar";
+        }
+      </script>
   </header>
 
     <!--Tipo do conteúdo da página-->

@@ -23,4 +23,6 @@ var lavadores = [
       "qtdAvaliacoes":  489,
       "valorCobrado": 75
   },
+  
 ]
+

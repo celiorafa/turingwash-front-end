@@ -30,7 +30,7 @@
           <ul id="menu">
             <a href="./meuscarros.html"><li>Meus Carros</li></a>
             <a href="./minhaslavagens.html"><li>Minhas Lavagens</li></a>
-            <li><button id="loginButton" class="cabecalho__botao_sair"></button></li>
+            <li><button id="loginButton" class="cabecalho__botao_sair">Offline</button></li>
           </ul>
         </div>
       </nav>
@@ -73,10 +73,12 @@
     </main>
 
     <!--Blocos dos lavadores-->
-    <ul class="lavadores">
-    <li class="lavadores__card">
+    <ul id="liCard" class="lavadores" >
+
+  <!-- blocos utilizados para configuração sem Script
+    <li   class="lavadores__card">
       <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
-      <span class="lavadores__card_nome">João Pereira</span>
+      <span id="nomeLavador" class="lavadores__card_nome">João Pereira</span>
       <span class="lavadores__card_nota">Nota 4.5 (998 avaliações)</span>
       <span class="lavadores__card_valor" >R$ 80</span>
       <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
@@ -99,7 +101,7 @@
       <span class="lavadores__card_valor">R$ 90</span>
       <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
       <button class="lavadores__card_botao">Lavar meu carro</button>
-    </li>
+    </li> 
 
     <li class="lavadores__card">
       <img class="lavadores__card_avatar" src="./img/profile.png" alt="Avatar do Lavador">
@@ -108,8 +110,60 @@
       <span class="lavadores__card_valor">R$ 60</span>
       <a class="lavadores__card_ver-avali" href="inserir">Ver avaliações</a>
       <button class="lavadores__card_botao">Lavar meu carro</button>
-    </li>
+    </li>  -->
     </ul>
+
+    <script src="./js/lavadores.js"></script>
+    <script>
+        let list = document.getElementById("liCard");
+
+        for (i=0;i<lavadores.length;i++){
+        let li = document.createElement("li");
+        let novoNome = document.createElement("span");
+        let novaImg = document.createElement("img");
+        let novaNota = document.createElement("span");
+        let novoValor = document.createElement("span");
+        let novoVer = document.createElement("a");
+        let novoBotao = document.createElement("button");
+        
+        li.innerHTML;
+        li.className="lavadores__card";
+
+        novoNome.innerText=lavadores[i].nome;
+        novoNome.className="lavadores__card_nome";
+
+        novaImg.src="./img/profile.png";
+        novaImg.className="lavadores__card_avatar";
+
+        novaNota.innerText="Nota " + lavadores[i].nota + " ("+lavadores[i].qtdAvaliacoes + " avaliações)";
+        novaNota.className="lavadores__card_nota";
+
+        novoValor.innerText="R$ "+lavadores[i].valorCobrado;
+        novoValor.className="lavadores__card_valor";
+
+        novoVer.innerText="Ver avaliações";
+        novoVer.className="lavadores__card_ver-avali";
+
+        novoBotao.innerText="Lavar meu carro";
+        novoBotao.className="lavadores__card_botao";
+
+        list.appendChild(li);
+        li.appendChild(novoNome);
+        li.appendChild(novaImg);
+        li.appendChild(novaNota);
+        li.appendChild(novoValor);
+        li.appendChild(novoVer);
+        li.appendChild(novoBotao);
+        }
+
+
+
+
+
+    
+
+    </script>
+
     <!--Bloco do rodapé-->
     <footer class="rodape">
       <div>
