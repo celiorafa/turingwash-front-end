@@ -3,26 +3,24 @@
   <head>
     <title> Pedir lavagem</title>
     <link rel="icon" type="imagem/png" href="./img/turingwash-icon.svg" />
-    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-
     <meta charset="utf-8">
+    <!--Arquivos da responsividade-->
+      <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
+      <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300; 700&display=swap" rel="stylesheet">
+    <!--Importanto fontes do Google-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300; 700&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
     <!-- Cabeçalho com menu de opções-->
-    
     <header class="cabecalho__menu_background" >
       <a href="./pedirlavagem.html"><img class="cabecalho__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash"></a>
       <nav class="cabecalho__menu-paginas" role="navigation">
-        
         <div id="menuToggle">
-          
           <input type="checkbox" />
           <span></span>
           <span></span>
@@ -34,8 +32,9 @@
           </ul>
         </div>
       </nav>
-      <script src="./js/usuario.js"></script> 
       
+      <script src="./js/usuario.js"></script> 
+
       <script>       
         if (usuario.logado==true){
           const estado = document.getElementById("loginButton");
@@ -48,32 +47,32 @@
       </script>
     </header>
 
-    <!--Tipo do conteúdo da página-->
-    <div class="titulo-conteudo">
-      <h2 class="titulo-conteudo__pagina">Lavadores disponíveis próximos de você...</h2>
+  <!--Tipo do conteúdo da página-->
+  <div class="titulo-conteudo">
+    <h2 class="titulo-conteudo__pagina">Lavadores disponíveis próximos de você...</h2>
+  </div>
+
+  <!--Opções da página-->
+  <main class="opcoes-filtro">
+    <div class="opcoes-filtro__carro">
+      <span>Lavar</span>
+      <select class="opcoes-filtro__selecionar">
+        <option value="carro1">Nissan Kicks</option>
+        <option value="carro2">Chevrolet Onix</option>
+      </select>
     </div>
 
-    <!--Opções da página-->
-    <main class="opcoes-filtro">
-      <div class="opcoes-filtro__carro">
-        <span>Lavar</span>
-        <select class="opcoes-filtro__selecionar">
-          <option value="carro1">Nissan Kicks</option>
-          <option value="carro2">Chevrolet Onix</option>
-        </select>
-      </div>
+    <div class="opcoes-filtro__ordenar">
+      <span>Ordenar por</span>
+      <select class="opcoes-filtro__selecionar">
+        <option value="prox-desc">proximidade</option>
+        <option value="price-desc">menor preço</option>
+      </select>
+    </div> 
+  </main>
 
-      <div class="opcoes-filtro__ordenar">
-        <span>Ordenar por</span>
-        <select class="opcoes-filtro__selecionar">
-          <option value="prox-desc">proximidade</option>
-          <option value="price-desc">menor preço</option>
-        </select>
-      </div>
-    </main>
-
-    <!--Blocos dos lavadores-->
-    <ul id="liCard" class="lavadores" >
+  <!--Blocos dos lavadores-->
+  <ul id="liCard" class="lavadores" >
 
   <!-- blocos utilizados para configuração sem Script - semana 2
     <li   class="lavadores__card">
@@ -113,74 +112,74 @@
     </li>  -->
     </ul>
 
-    <!-- SCRIPT PARA DEIXAR LISTA DINAMICA-->
-    <script src="./js/lavadores.js"></script>
-    <script>
-        let list = document.getElementById("liCard");
+  <!-- SCRIPT PARA DEIXAR LISTA DINAMICA-->
+  <script src="./js/lavadores.js"></script>
+  <script>
+    let list = document.getElementById("liCard");
 
-        for (i=0;i<lavadores.length;i++){
-        let li = document.createElement("li");
-        let novoNome = document.createElement("span");
-        let novaImg = document.createElement("img");
-        let novaNota = document.createElement("span");
-        let novoValor = document.createElement("span");
-        let novoVer = document.createElement("a");
-        let novoBotao = document.createElement("button");
-        
-        li.innerHTML;
-        li.className="lavadores__card";
+    for (i=0;i<lavadores.length;i++){
+      let li = document.createElement("li");
+      let novoNome = document.createElement("span");
+      let novaImg = document.createElement("img");
+      let novaNota = document.createElement("span");
+      let novoValor = document.createElement("span");
+      let novoVer = document.createElement("a");
+      let novoBotao = document.createElement("button");
+      
+      li.innerHTML;
+      li.className="lavadores__card";
 
-        novoNome.innerText=lavadores[i].nome;
-        novoNome.className="lavadores__card_nome";
+      novoNome.innerText=lavadores[i].nome;
+      novoNome.className="lavadores__card_nome";
 
-        novaImg.src="./img/profile.png";
-        novaImg.className="lavadores__card_avatar";
+      novaImg.src="./img/profile.png";
+      novaImg.className="lavadores__card_avatar";
 
-        novaNota.innerText="Nota " + lavadores[i].nota + " ("+lavadores[i].qtdAvaliacoes + " avaliações)";
-        novaNota.className="lavadores__card_nota";
+      novaNota.innerText="Nota " + lavadores[i].nota + " ("+lavadores[i].qtdAvaliacoes + " avaliações)";
+      novaNota.className="lavadores__card_nota";
 
-        novoValor.innerText="R$ "+lavadores[i].valorCobrado;
-        novoValor.className="lavadores__card_valor";
+      novoValor.innerText="R$ "+lavadores[i].valorCobrado;
+      novoValor.className="lavadores__card_valor";
 
-        novoVer.innerText="Ver avaliações";
-        novoVer.className="lavadores__card_ver-avali";
+      novoVer.innerText="Ver avaliações";
+      novoVer.className="lavadores__card_ver-avali";
 
-        novoBotao.innerText="Lavar meu carro";
-        novoBotao.className="lavadores__card_botao";
+      novoBotao.innerText="Lavar meu carro";
+      novoBotao.className="lavadores__card_botao";
 
-        list.appendChild(li);
-        li.appendChild(novoNome);
-        li.appendChild(novaImg);
-        li.appendChild(novaNota);
-        li.appendChild(novoValor);
-        li.appendChild(novoVer);
-        li.appendChild(novoBotao);
-        }
+      list.appendChild(li);
+      li.appendChild(novoNome);
+      li.appendChild(novaImg);
+      li.appendChild(novaNota);
+      li.appendChild(novoValor);
+      li.appendChild(novoVer);
+      li.appendChild(novoBotao);
+    }
 
-    </script>
+  </script>
 
-    <!--Bloco do rodapé-->
-    <footer class="rodape">
-      <div>
-        <img class="rodape__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash">
-      </div>
+  <!--Bloco do rodapé-->
+  <footer class="rodape">
+    <div>
+      <img class="rodape__imagem_logo" src="./img/turingwash-logo.svg" alt="Logotipo do TuringWash">
+    </div>
 
-      <div>
-        <ul class="rodape__mapa">
-          <li>Sobre</li>
-          <li>FAQ</li>
-          <li>Contato</li>
-          <li>Termos de uso</li>
-        </ul>
-      </div>
+    <div>
+      <ul class="rodape__mapa">
+        <li>Sobre</li>
+        <li>FAQ</li>
+        <li>Contato</li>
+        <li>Termos de uso</li>
+      </ul>
+    </div>
 
-      <div class="rodape__redes">
-        <img class="rodape__imagem_insta" src="./img/logoinsta.png" alt="Logo instagram">
-        <span class="rodape__usuario_insta">@turingwash</span>
-        <br>
-        <span class="rodape__direitos">2022. TuringWash. Todos os direitos reservados</span>
-      </div>
-    </footer>
+    <div class="rodape__redes">
+      <img class="rodape__imagem_insta" src="./img/logoinsta.png" alt="Logo instagram">
+      <span class="rodape__usuario_insta">@turingwash</span>
+      <br>
+      <span class="rodape__direitos">2022. TuringWash. Todos os direitos reservados</span>
+    </div>
+  </footer>
 
   </body>
 
